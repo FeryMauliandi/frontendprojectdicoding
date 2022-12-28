@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookshelf Apps</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>  
+        <h1>\Bookshelf<span>Apps/</span></h1>
+    </header>
+    <div class="wrapper">
+      <div class="top-wrapper">
+        <div class="input-container">
+          <h2 class="title">Masukkan Buku Baru</h2>
+          <form class="form" id="formInputBuku" action="" method="post">
+            <div class="form-group">
+              <label for="">Judul</label>
+              <input type="text" id="judulBuku" name="judul" required>
+            </div>
+            <div class="form-group">
+              <label for="">Penulis</label>
+              <input type="text" id="penulisBuku" name="penulis" required>
+            </div>
+            <div class="form-group">
+              <label for="">Tahun</label>
+              <input type="number" id="tahunBuku" name="tahun" required>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" name="isRead" id="isRead">
+              <label for="isRead" >Sudah dibaca</label>
+            </div>
+            <button type="submit" class="submit-btn">Simpan Buku</button>
+          </form>
+        </div>
+        <div class="search-container">
+          <h2 class="title2">Cari Buku</h2>
+          <form class="form2" id="formCariBuku" action="" method="post">
+            <div class="form-group">
+              <label for="cariBuku" style="color: yellow;">Cari Buku</label>
+              <input type="text" id="cariBuku" name="cariBuku">
+            </div>
+            <div class="form-search-btn">
+              <button type="submit" class="cari-btn">Cari</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="bottom">
+        <div class="daftar-container">
+          <h2>Buku Belum dibaca</h2>
+          <div id="belumBaca"></div>
+        </div>
+        <div class="daftar-container">
+          <h2>Buku Sudah dibaca</h2>
+          <div id="sudahBaca"></div>
+        </div>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
